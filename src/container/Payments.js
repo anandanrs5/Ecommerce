@@ -18,7 +18,7 @@ const Payments = () => {
   );
 
   // Calculate the grand total for the selected products in state
-  const grandTotal = state.reduce((total, item) => total + (item.count || 0) * item.price, 0);
+  const grandTotal = state.reduce((total, item) => total + (item.count || 1) * item.price, 0);
 
   if (state == null) {
     return null; // Return null or any placeholder while loading
