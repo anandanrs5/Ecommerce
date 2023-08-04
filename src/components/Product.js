@@ -26,7 +26,7 @@ const Product = () => {
 
     return (
         <div className="d-flex justify-content-center curser-pointer mt-2" role="button" >
-            <div className="card m-2 d-flex  " style={{ width: "390px" }} >
+            <div className="card m-2 d-flex bg-colorProd" style={{ width: "390px" }} >
                 <img src={selectItem.thumbnail} height={200} alt={selectItem.title}
                     className='card-img-top product b_rad' />
                 <div className="card-body">

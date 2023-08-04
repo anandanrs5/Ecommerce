@@ -8,8 +8,14 @@ import Payments from './Payments'
 
 
 const Home = () => {
-    return (
-        <div>
+       return (
+        
+        
+        <div className=''  
+        style={{
+            backgroundImage:"linear-gradient(315deg, #8ae9b3 0%, #c8d6e5 74%)"
+        }}
+        >
             <Header />
             <Routes >
                 <Route path="/" element={<Dashboard />} />

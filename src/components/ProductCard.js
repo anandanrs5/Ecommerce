@@ -5,7 +5,7 @@ const ProductCard = (fff) => {
     const navigate = useNavigate();
     return (
         <div className="d-flex  mt-4 " key={fff.id}>
-            <div className="card m-2 d-flex curser-pointer " role="button" style={{ width: "250px" }}
+            <div className="card m-2 d-flex curser-pointer bg-color " role="button" style={{ width: "250px" }}
                 onClick={() => navigate(`/product/${fff.id}`)}   >
                 <img src={fff.thumbnail} height={180} alt={fff.title} className='card-img-top b_rad' />
                 <div className="card-body">

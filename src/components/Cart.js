@@ -45,13 +45,14 @@ const Cart = () => {
       ) : (
         <div className="" style={center}>
           <h2 className='mt-4'>Ohhh!!!!! &nbsp;   Your Cart is Empty</h2>
-          <img src="https://royal-llc.com/assets/website/image/oops.png" alt="" width={300} className='mt-5' />
+          <img src="https://royal-llc.com/assets/website/image/oops.png" alt="" width={200} className='mt-5' />
         </div>
       )}
+      {list.length > 0 ?
       <div className='d-flex justify-content-center'>
         <Link to="/payments"><button className="btn btn-success" >Go to CheckOut</button></Link>
-      </div>
-
+      </div> : null
+        }
     </div>
   );
 };

@@ -8,12 +8,12 @@ const Header = () => {
     const st={
         color:"WHITE",
         fontSize:"50px",
-        fontFamily:"poppins"
+        // fontFamily:"poppins"
     }
     const navigate =useNavigate();
     return (
-        <div className='bg-primary p-3'>
-            <h1 className="text-center " style={st}>Pick & Buy</h1>
+        <div className='header p-3'>
+            <h1 className="text-center font_meie_script" style={st}>Amazony</h1>
             <div className="row justify-content-center pt-2 pb-1">
                 <div className="col-sm-12 col-md-7 col-lg-6 col-xl-5 d-flex">
                     <button className='btn btn-success me-4'
