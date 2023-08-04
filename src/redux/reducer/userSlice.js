@@ -5,7 +5,6 @@ export const getUsers = createAsyncThunk('gets/getUsers', async () => {
     const response = await axios.get("https://dummyjson.com/products");
     return response.data?.products;
 })
-
 const userSlice = createSlice({
     name: "users",
     initialState: {
@@ -23,6 +22,6 @@ const userSlice = createSlice({
         builder.addCase([getUsers.fulfilled], (state, action) => {
             state.users = []
             state.loading = false
-        });}
+    });}
 })
 export default userSlice.reducer;

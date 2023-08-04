@@ -2,26 +2,26 @@ import React, { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
 import { addItem } from '../redux/reducer/card';
-import { useNavigate } from 'react-router-dom';
 import { getUsers } from '../redux/reducer/userSlice';
 
 const Product = () => {
-    const navigate = useNavigate();
     const dispatch = useDispatch();
     const params = useParams();
     useEffect(() => { dispatch(getUsers()) }, [dispatch])
+
     const { users, loading } = useSelector((state) => state.users)
     const selectItem = users.find((element) => element.id === parseInt(params.id))
     const list = useSelector((state) => state.cart.list)
-    let cart = list.find((item) => item.id === selectItem.id)
-    // console.log("cart count => ",sss);
+    let addToCartButton = list.find((item) => item.id === selectItem.id)
 
     const addToCart = () => {
         dispatch(addItem(selectItem))
     }
-
     if (loading) {
         return <div>Loading...</div>;
+    }
+    if (selectItem == null) {
+        return
     }
 
     return (
@@ -39,9 +39,9 @@ const Product = () => {
                     {
                         selectItem.stock > 0 ?
                             <div className="">
-                                <button className='btn btn-success me-2'
-                                    onClick={() => navigate(`/checkout/${selectItem.id}`)}>BuyNow</button>
-                                {cart ?
+                                <button className='btn btn-success me-2'> 
+                                <Link to={`/payments/${selectItem.id}`} className='text-decoration-none text-white'>BuyNow</Link> </button>
+                                {addToCartButton ?
                                     <Link to="/cart" className='btn btn-outline-warning'>Go to Cart</Link> :
                                     <button className='btn btn-success' onClick={addToCart} >Add to Cart</button>}
                             </div> :

@@ -18,12 +18,16 @@ export const cartSlice = createSlice({
             state.list = state.list.filter((item) => item.id !== action.payload);
         },
         modifyItem: (state, { payload }) => {
-            const index = state.list.findIndex (
-            ( product ) => product.id === payload.id );
-            state.list = [ 
-                ...state.list.slice(0, index),
-              { ...state.list[index], count: payload.count }, 
-                ...state.list.slice(index + 1)
+            const index = state.list.findIndex(
+                (product) => product.id === payload.id);
+            state.list = [
+                // state.list = [10, 20, 30, 40, 50];
+                // const newArray = state.list.slice(0, 3);
+                // console.log(newArray); // Output: [10, 20, 30]
+                ...state.list.slice(0, index), // Output: [10, 20, 30]
+                { ...state.list[index], count: payload.count }, // {40, count:1}
+                ...state.list.slice(index + 1) // output is 50
+                //finally [10,20,30,{40,count:1},50]
             ];
         }
     }

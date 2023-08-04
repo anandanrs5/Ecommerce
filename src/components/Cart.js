@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 const Cart = () => {
   const list = useSelector((state) => state.cart.list);
   const dispatch = useDispatch();
-
   const incrementItem = (item) => {
     dispatch(modifyItem({ ...item, count: item.count + 1 }));
   };
@@ -28,7 +27,6 @@ const Cart = () => {
     alignItems: "center",
     color: "red",
   };
-
   return (
     <div>
       {list.length > 0 ? (
@@ -51,7 +49,7 @@ const Cart = () => {
         </div>
       )}
       <div className='d-flex justify-content-center'>
-        <Link to="/checkout"><button className="btn btn-success" >Go to Checkout</button></Link>
+        <Link to="/payments"><button className="btn btn-success" >Go to CheckOut</button></Link>
       </div>
 
     </div>
