@@ -3,7 +3,7 @@
 import React from "react";
 
 import { useNavigate } from "react-router-dom";
-
+import logo_img from "../images/logo.png";
 const Header = () => {
   const st = {
     color: "WHITE",
@@ -15,12 +15,7 @@ const Header = () => {
     <div className="header p-3">
       <div className="row justify-content-center pt-2 pb-1">
         <div className="d-flex justify-content-center mb-3">
-          <img
-            src="https://www.transparentpng.com/thumb/treasure/gold-treasure-chest-clipart-5.png"
-            alt="BigTreasure"
-            width="70px"
-            className="me-3"
-          ></img>
+          <img src={logo_img} alt="BigTreasure" width="70px" className="me-3" />
           <h1 className="text-center font_meie_script mt-4" style={st}>
             BigTreasure
           </h1>
