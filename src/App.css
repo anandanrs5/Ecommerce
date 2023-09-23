@@ -1,76 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Meie+Script|Shadows+Into+Light|Arvo|Monda");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,700;1,400&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Meie+Script|Shadows+Into+Light|Arvo|Monda');
-  @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,700;1,400&display=swap');
-
-
-.b_rad{
-    border-radius: 10px;
+.b_rad {
+  border-radius: 10px;
 }
-div .bg-color{
-background-image: linear-gradient(315deg, #04d1ff 0%, #be3ffd 74%);
-
+div .bg-color {
+  background-image: linear-gradient(315deg, #e7cdee 0%, #fcc9e2 74%);
 }
-div .bg-colorProd{
-    background-image: linear-gradient(319deg, #dbf26e 0%, #61fa74 37%, #1cfdd6 100%);
-    
+div .bg-colorProd {
+  background-image: linear-gradient(
+    319deg,
+    #dbf26e 0%,
+    #61fa74 37%,
+    #1cfdd6 100%
+  );
 }
-.prodListIt{
-    display: flex;
-    justify-content:center;
-    margin-top: 15px;
+.prodListIt {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
 }
 .font_meie_script {
-    font-family: 'Lobster Two', cursive;
-  }
-.card-img-top{
-    width: 200px !important;
-    margin: auto;
-    margin-top: 22px;
-    border: 1px solid rgb(230, 224, 224);
-    box-shadow: 1px 1px 5px rgb(207, 207, 214);
+  font-family: "Lobster Two", cursive;
 }
-.product{
-    width: 320px !important;
-    margin: auto;
-    margin-top: 22px;
-    border: 1px solid rgb(230, 224, 224);
-    box-shadow: 1px 1px 5px rgb(207, 207, 214);
+.card-img-top {
+  width: 200px !important;
+  margin: auto;
+  margin-top: 22px;
+  border: 1px solid rgb(230, 224, 224);
+  box-shadow: 1px 1px 5px rgb(207, 207, 214);
 }
-.cart{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(134, 253, 140);
+.product {
+  width: 320px !important;
+  margin: auto;
+  margin-top: 22px;
+  border: 1px solid rgb(230, 224, 224);
+  box-shadow: 1px 1px 5px rgb(207, 207, 214);
 }
-.cartList{
-    background-color: rgb(2, 250, 188);
-    padding: 20px;
-    margin: 10px 0px;
-    border-radius: 10px;
+.cart {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(134, 253, 140);
 }
-.header{
-    background-color: #ff1493;
-background-image: linear-gradient(319deg, #ff0088 0%, #0000ff 57%, #ff0062 100%);
-
+.cartList {
+  background-color: rgb(2, 250, 188);
+  padding: 20px;
+  margin: 10px 0px;
+  border-radius: 10px;
+}
+.header {
+  background-color: #ff1493;
+  background-image: linear-gradient(
+    319deg,
+    #b886ff 0%,
+    #d296fa 57%,
+    #ec70ff 100%
+  );
 }
 
 @media only screen and (max-width: 320px) {
-    .product{
-        width: 250px !important;
-        margin: auto;
-        margin-top: 22px;
-        /* background-color: red; */
-        border: 1px solid rgb(230, 224, 224);
-        box-shadow: 1px 1px 5px rgb(207, 207, 214);
-    }
+  .product {
+    width: 250px !important;
+    margin: auto;
+    margin-top: 22px;
+    /* background-color: red; */
+    border: 1px solid rgb(230, 224, 224);
+    box-shadow: 1px 1px 5px rgb(207, 207, 214);
   }
-  @media only screen and (max-width: 280px) {
-    .product{
-        width: 200px !important;
-        margin: auto;
-        margin-top: 22px;
-        /* background-color: red; */
-        border: 1px solid rgb(230, 224, 224);
-        box-shadow: 1px 1px 5px rgb(207, 207, 214);
-    }
+}
+@media only screen and (max-width: 280px) {
+  .product {
+    width: 200px !important;
+    margin: auto;
+    margin-top: 22px;
+    /* background-color: red; */
+    border: 1px solid rgb(230, 224, 224);
+    box-shadow: 1px 1px 5px rgb(207, 207, 214);
   }
+}
