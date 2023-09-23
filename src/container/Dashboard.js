@@ -7,7 +7,7 @@ const Dashboard = () => {
     const { users, loading } = useSelector((store) => store.users)
     const dispatch = useDispatch();
     useEffect(() => {
-        dispatch(getUsers())
+        dispatch(getUsers()) 
     }, [dispatch])
 
     if (loading) {
